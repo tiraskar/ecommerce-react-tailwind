@@ -6,7 +6,6 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const handleSlide = (direction) => {
-    console.log(direction)
     if (direction === 'left') {
       setCurrentSlide((prevSlide) =>
         prevSlide === 0 ? sliderItems.length - 1 : prevSlide - 1
@@ -29,7 +28,7 @@ const Slider = () => {
   }, [currentSlide])
 
   return (
-    <div className='relative flex  justify-center items-center mx-auto w-full min-h-[80vh] overflow-hidden'>
+    <div className='relative flex  justify-center items-center mx-auto w-full min-h-[85vh] overflow-hidden'>
       <div className='absolute z-10 left-0 ml-2 bg-slate-200 rounded-full opacity-40'>
         <button className='p-2  ' onClick={() => handleSlide('left')}>
           <BiLeftArrow size={24} />
@@ -39,14 +38,14 @@ const Slider = () => {
         {sliderItems.map((item, index) => (
           <div
             key={item.id}
-            className={`h-full bg-${
+            className={`h-full ${
               item.bg
             } absolute inset-0 flex items-center  transform transition-transform ${
               index === currentSlide ? 'translate-x-0' : '-translate-x-full'
             }  transition-all duration-1000 `}
           >
             <div className='flex-1 h-full '>
-              <img src={item.img} alt='' className='sliderImage' />
+              <img src={item.img} alt='' className='sliderImage ' />
             </div>
             <div className='flex-1 p-12'>
               <h2 className='text-8xl uppercase'>{item.title}</h2>
