@@ -6,7 +6,13 @@
   img {
     @apply h-full w-full object-cover;
   }
+  option {
+    @apply p-2;
+  }
   .sliderImage {
     @apply object-contain;
+  }
+  input {
+    @apply p-1   border border-black;
   }
 }

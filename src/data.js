@@ -156,9 +156,6 @@ export const popularProducts = [
       count: 146,
     },
   },
-]
-
-const allProudcts = [
   {
     id: 1,
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
@@ -321,3 +318,5 @@ const allProudcts = [
     },
   },
 ]
+
+const allProudcts = []

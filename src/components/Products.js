@@ -8,7 +8,7 @@ import {
 
 const Products = () => {
   return (
-    <div className='container py-10 bg-slate-300'>
+    <div className=' py-10 bg-slate-300'>
       <div className='flex mx-auto justify-center items-center pb-10'>
         <h1 className='text-5xl uppercase font-bold tracking-widest '>
           Products

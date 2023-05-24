@@ -15,7 +15,7 @@ import { IoMdCall } from 'react-icons/io'
 import { MdLocationOn } from 'react-icons/md'
 const Footer = () => {
   return (
-    <div className='container grid grid-cols-3 gap-16 px-10 py-10 bg-cyan-100'>
+    <div className='  grid grid-cols-3 gap-16 px-10 py-10 bg-cyan-100'>
       <div className='space-y-6'>
         <h1 className='text-3xl font-semibold '>SEN E-COMMERCE</h1>
         <p className='text-lg'>
